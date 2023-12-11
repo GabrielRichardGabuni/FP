@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(0, 250, 0);
+}
+
+html::-webkit-scrollbar-track{
+    background: black;
+}
+
+.heading{
+    font-size: 1.9rem;
+    margin-left: 5rem;
+    color: #fff;
+    border-left: 7px solid rgb(0, 255, 0);
+    padding-left: 8px;
+}
+
+.btn{
+    background-color: red;
+    font-size: 20px;
+    padding: 5px 19px;
+    border-radius: 6px;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.btn:hover{
+    transform: scaleX(1.15);
+}
+
+/*===========
+    Header
+=========*/
+
+header{
+    margin: 1.6rem 7%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo h1{
+    border: 5px solid rgb(0, 255, 0);
+    padding: 5px 15px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+header .container nav{
+    margin-left: 25rem;
+}
+
+header .container nav a{
+    margin: 5 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    padding: 5px;
+    color: white;
+}
+
+header .container a:hover{
+    border-bottom: 5px solid rgb(30, 255, 0);
+    padding-bottom: 7px;
+    background-color: rgb(0, 255, 0);
+}
+
+/*===========
+    Home
+=========*/
+
+.home{
+    background-image: url(hex.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 49rem;
+    margin-top: -6.3rem;
+}
+
+.home .container{
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.home .container .content{
+    flex: 1 1 45rem;
+    margin-left: 7rem;
+    margin-top: 5rem;
+}
+
+.home .container .content h1{
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.home .container .content h2{
+    color: red;
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.home .container .content p{
+    color: #eee;
+    line-height: 1.8;
+    margin-bottom: 2.3rem;
+    font-size: 1.1rem;
+}
+
+.home .container .content .btn{
+    padding: 9px 25px;
+}
+
+.home .container .content .btn:hover{
+    background-color: rgb(0, 250, 0);
+    color: #fff;
+}
+
+.home .container .image{
+    flex: 1 1 25rem;
+    margin-top: 8rem;
+    padding-left: 10%;
+}
+
+.home .container .image img{
+    width: 45rem;
+    height: 35rem;
+    border: 10px solid rgb(0, 250, 0);
+    border-bottom-left-radius: 30rem;
+    border-top-left-radius: 30rem;
+    margin-right: -8px;
+}
+
+/*===========
+    About Us
+=========*/
+
+.about{
+    position: relative;
+}
+
+.about .heading1{
+    position: absolute;
+    margin-left: 5rem;
+    top: 2.5rem;
+}
+
+.about .heading1 h1{
+    color: #fff;
+    font-size: 2.5rem;
+    border-left: 7px solid rgb(0, 255, 0);
+    padding-left: 1rem;
+}
+
+.about .container .image img{
+    width: 100%;
+    height: 40rem;
+}
+
+.about .container .content{
+    position: absolute;
+    top: 6rem;
+    left: 47rem;
+    color: #fff;
+    margin-right: 7rem;
+}
+
+.about .container .content h1{
+    color: red;
+    font-size: 2.5rem;
+}
+
+.about .container .content h2{
+    margin: 12px 0 2.5rem;
+    font-size: 1.8rem;
+    background-color: #999;
+    color: black;
+    padding: 5px 18px;
+    width: 20rem;
+    border-radius: 20px;
+}
+
+.about .container .content p{
+    line-height: 2;
+    font-size: 17px;
+    background-color: rgb(0, 250, 0);
+    color: #000000;
+    padding: 3px 10px;
+}
+
+.about .container .content .p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+}
+
+.about .container .content .btn{
+    padding: 10px 28px;
+}
+
+.about .container .content .btn:hover{
+    background-color: rgb(0, 250, 0);
+    color: #fff;
+}
+
+/*===========
+    Products
+=========*/
+
+.products{
+    background-color: #000000;
+    padding: 2rem 0;
+}
+
+.products .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.products .container .box{
+    margin: 0 8px;
+}
+
+.products .container .box .image img{
+    width: 30rem;
+    border: 4px solid rgb(0, 250, 0);
+}
+
+.products .container .box .image .center-img{
+    width: 30rem;
+    height: 35rem;
+    border: 4px solid whitesmoke;
+}
+
+.products .container .box h2{
+    color: #000000;
+    background-color: #fff;
+    width: 7rem;
+    position: absolute;
+    top: 3rem;
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    padding: 4px 9px;
+    border-radius: 5px;
+}
+
+.products .container .box .tag{
+    color: #ffff;
+    background-color: #000000;
+    top: 2rem;
+    font-size: 1.5rem;
+    
+}
+
+/*===========
+    Service
+=========*/
+
+.services{
+    background-color: #111;
+    padding: 2rem 0;
+    margin: 10px 0;
+}
+
+.services .container{
+    display: flex;
+    padding: 3rem 10rem;
+}
+
+.services .container .image{
+    flex: 1 1 45rem;
+}
+
+.services .container .content{
+    flex: 1 1 45rem;
+    background-color: rgb(30, 255, 0);
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.services .container .content h1{
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.services .container .content h2{
+    background-color: #000000;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 9px 10px;
+    width: 25rem;
+    border-radius: 8px;
+}
+
+.services .container .content p{
+    line-height: 1.8;
+    color: #000000;
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+
+.services .container .content .p{
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+
+.services .container .image img{
+    width: 35.5rem;
+    height: 30rem;
+    border: 5px solid #fff;
+}
+
+.services .container .content .btn{
+    background-color: #000000;
+    padding: 8px 22px;
+}
+
+.services .container .content .btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/*===========
+    Contact
+=========*/
+
+.contact{
+    background-image: url(r15v3.jpg);
+    height: 24rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact .box{
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.contact .box h1{
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.contact .box p{
+    color: #fff;
+    margin: 0 20rem;
+    line-height: 1.8;
+}
+
+.contact .email{
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact .email .email-1{
+    width: 32rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+}
+
+.contact .email .Submit{
+    height: 2.8rem;
+    width: 6.5rem;
+    border-radius: 2rem;
+    margin-left: -7.4rem;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/*===========
+    About Us
+=========*/
+
+
+
+
+/*===========
+    About Us
+=========*/
